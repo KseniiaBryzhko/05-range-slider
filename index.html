@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Range-слайдер</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- основний контейнер -->
+  <div class="wrapper">
+
+    <!-- опис та значення слайдера -->
+    <div class="amount">
+
+      <!-- позначка у вигляді верхнього індекса -->
+      <sup>$</sup>
+
+      <!-- числове значення, яке після додавання буде змінюватись відповідно до руху на слайдері -->
+      <span class="dollars">16.00</span>
+
+    </div>
+
+    <!-- елемент веб-форми типу range -->
+    <input type="range" min="0" max="100" step="1">
+
+    <!-- тег переходу на новий рядок -->
+    <br>
+
+    <!-- елемент-кнопка -->
+    <button>Buy Now</button>
+  </div>
+
+
+</body>
+
+</html>

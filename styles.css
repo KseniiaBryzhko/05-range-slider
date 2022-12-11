@@ -1,0 +1,107 @@
+/* підключення шрифтів з сайту fonts google */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+
+/* налаштування видимої частини вікна браузера */
+body {
+  background: #262529;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* налаштування основного контейнера */
+.wrapper {
+  background: #262529;
+  box-shadow: 0px 0px 250px #000000;
+  border-radius: 20px;
+  padding: 60px 55px;
+  text-align: center;
+}
+
+/* налаштування блоку з описом та значенням слайдера */
+.amount {
+  color: #ffc700;
+  font-size: 6rem;
+}
+
+/* налаштування позначки */
+sup {
+  font-size: 4rem;
+  position: relative;
+  left: 10px;
+}
+
+/* базові налаштування range-слайдера */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 10px;
+  width: 700px;
+  height: 14px;
+  background: #4d4c53;
+  outline: none;
+  margin: 70px 0;
+}
+
+/* вендорні префікси
+-webkit-: Chrome, Safari, Opera
+-moz-: Mozilla Firefox
+-ms-: Internet Explorer */
+
+/* додаткові налашьування range-слайдера - коло-контроллер для Chrome, Safari, Opera */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  background: #ea346f;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: 15px solid rgba(234, 52, 111, 0.2);
+}
+
+/* додаткові налаштування range-слайдера - коло-контроллер для Mozilla Firefox */
+input[type="range"]::-moz-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: #ea346f;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: 15px solid rgba(234, 52, 111, 0.2);
+}
+
+/* додаткові налаштування range-слайдера - початкової лінії прогреса для Mozilla Firefox */
+input[type="range"]::-moz-range-progress {
+  background: #ea346f;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 14px;
+}
+
+/* налаштування кнопки */
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-size: 2rem;
+  background: #333139;
+  padding: 35px 50px;
+  border-radius: 100px;
+}
+
+/* налаштування кнопки при наведення вказівника миші */
+button:hover {
+  background: white;
+  color: black;
+}
